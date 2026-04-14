@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#060606" />
+  <meta name="description" content="ConvertBox — Universal file converter. Drop anything, convert to anything." />
+  <title>ConvertBox</title>
+  <style>body{margin:0;background:#060606;}</style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
