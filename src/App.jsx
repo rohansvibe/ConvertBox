@@ -30,6 +30,18 @@ const OUTPUT_GROUPS = [
       { label: "WMV", ext: "wmv" }, { label: "3GP", ext: "3gp" },
     ],
   },
+  {
+    group: "Document", icon: "📄", color: "#4ade80", formats: [
+      { label: "PDF", ext: "pdf" }, { label: "DOCX", ext: "docx" },
+      { label: "DOC", ext: "doc" }, { label: "XLSX", ext: "xlsx" },
+      { label: "XLS", ext: "xls" }, { label: "PPTX", ext: "pptx" },
+      { label: "PPT", ext: "ppt" }, { label: "ODT", ext: "odt" },
+      { label: "ODS", ext: "ods" }, { label: "ODP", ext: "odp" },
+      { label: "RTF", ext: "rtf" }, { label: "TXT", ext: "txt" },
+      { label: "HTML", ext: "html" }, { label: "CSV", ext: "csv" },
+      { label: "EPUB", ext: "epub" },
+    ],
+  },
 ];
 
 const ALL_FORMATS = OUTPUT_GROUPS.flatMap(g => g.formats);
@@ -50,9 +62,11 @@ function getFileColor(name) {
   const img = ["png","jpg","jpeg","webp","bmp","gif","tiff","ico","avif","svg","raw","psd"];
   const aud = ["mp3","wav","ogg","flac","aac","opus","m4a","wma"];
   const vid = ["mp4","webm","avi","mkv","mov","flv","wmv","3gp","m4v"];
+  const doc = ["pdf","docx","doc","xlsx","xls","pptx","ppt","odt","ods","odp","rtf","txt","html","csv","epub"];
   if (img.includes(e)) return "#f97316";
   if (aud.includes(e)) return "#a78bfa";
   if (vid.includes(e)) return "#38bdf8";
+  if (doc.includes(e)) return "#4ade80";
   return "#6b7280";
 }
 
